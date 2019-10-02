@@ -5,6 +5,8 @@ using System.Security.Cryptography.X509Certificates;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour {
+    public static GameManager instance;
+    public int scores;
     public GameObject blockPrefab;
     public Vector2 blocksSize;
     public float curtainRadius;
@@ -13,6 +15,11 @@ public class GameManager : MonoBehaviour {
     private Vector2 curtainSize;
     private Vector2 curtainIntervals;//(radians,length)
     public Vector3 centerPos;
+
+    private void Awake() {
+        instance = this;
+    }
+
     // Start is called before the first frame update
     void Start() {
         curtainSize.x = 2 * Mathf.PI * curtainRadius *curtainDegree* Mathf.Deg2Rad;
