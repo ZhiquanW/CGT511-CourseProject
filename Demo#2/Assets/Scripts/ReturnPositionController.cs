@@ -21,6 +21,8 @@ public class ReturnPositionController : MonoBehaviour {
     private void OnTriggerEnter(Collider other) {
         if (other.gameObject.CompareTag("Controller")) {
             if (GameManager.instance.targetBlock.isTouched) {
+                GameManager.instance.targetBlock.isTarget = false;
+                Debug.Log("Origin");
                 isReturned = true;
             }
         }

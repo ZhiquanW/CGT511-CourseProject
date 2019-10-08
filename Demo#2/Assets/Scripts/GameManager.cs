@@ -50,7 +50,6 @@ public class GameManager : MonoBehaviour {
     void LaunchNextTouch() {
         returnPos.isReturned = false;
         Vector2 tmpIndex = targetSequence[currentTargetIndex];
-        targetBlock.isTarget = false;
         targetBlock = blockMat[(int) tmpIndex.x, (int) tmpIndex.y].GetComponent<BlockController>();
         targetBlock.isTarget = true;
     }

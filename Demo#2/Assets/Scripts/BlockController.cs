@@ -16,11 +16,12 @@ public class BlockController : MonoBehaviour {
     public float colorChangeSpeed;
     // Start is called before the first frame update
     void Start() {
+        originalColor = blockRenderer.material.color;
     }
 
     // Update is called once per frame
     void Update() {
-        blockRenderer.material.color = Color.Lerp(blockRenderer.material.color,targetedColor,colorChangeSpeed);
+        blockRenderer.material.color = Color.Lerp(blockRenderer.material.color,targetColor,colorChangeSpeed);
         if (isTarget) {
             targetColor = targetedColor;
         }

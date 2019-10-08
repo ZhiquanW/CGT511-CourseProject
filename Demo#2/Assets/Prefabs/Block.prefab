@@ -96,7 +96,9 @@ MonoBehaviour:
   blockRenderer: {fileID: 8713375932679437936}
   isTarget: 0
   isTouched: 0
-  targetColor: {r: 1, g: 0.028301895, b: 0.028301895, a: 1}
+  targetColor: {r: 1, g: 1, b: 1, a: 1}
+  originalColor: {r: 0, g: 0, b: 0, a: 0}
+  targetedColor: {r: 0, g: 1, b: 0.11951542, a: 0}
   colorChangeSpeed: 0.5
 --- !u!54 &-4017673084542022187
 Rigidbody:
