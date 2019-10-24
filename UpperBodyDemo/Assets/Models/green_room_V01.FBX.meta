@@ -1,0 +1,379 @@
+fileFormatVersion: 2
+guid: 0872e928d1e9135439d9e4d858facc01
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: ceiling_metal
+    100002: chair
+    100004: chair_pillow
+    100006: cieling
+    100008: door_frame
+    100010: door_glass
+    100012: door_metals
+    100014: door_wood
+    100016: eksaerismoi
+    100018: //RootNode
+    100020: keyboard
+    100022: lamps
+    100024: mprizes_buttons
+    100026: office_legs
+    100028: office_top
+    100030: pc_monitors
+    100032: pc_screen_01
+    100034: pc_screen_02
+    100036: pc_tower
+    100038: pipes
+    100040: screens_cable
+    100042: solinas_perimetros
+    100044: Tripodo
+    100046: Tripodo001
+    100048: walls
+    400000: ceiling_metal
+    400002: chair
+    400004: chair_pillow
+    400006: cieling
+    400008: door_frame
+    400010: door_glass
+    400012: door_metals
+    400014: door_wood
+    400016: eksaerismoi
+    400018: //RootNode
+    400020: keyboard
+    400022: lamps
+    400024: mprizes_buttons
+    400026: office_legs
+    400028: office_top
+    400030: pc_monitors
+    400032: pc_screen_01
+    400034: pc_screen_02
+    400036: pc_tower
+    400038: pipes
+    400040: screens_cable
+    400042: solinas_perimetros
+    400044: Tripodo
+    400046: Tripodo001
+    400048: walls
+    2100000: green_walls
+    2100002: Black_metal
+    2100004: gray_plastic
+    2100006: Gray_metal
+    2100008: black_plastic
+    2100010: door_frame
+    2100012: door_glass
+    2100014: wood_door
+    2100016: pc_texture
+    2100018: keyboard
+    2100020: fabric
+    2100022: lamps_white
+    2100024: pc_screen_01
+    2100026: pc_screen_02
+    2100028: white_plastic
+    2300000: ceiling_metal
+    2300002: chair
+    2300004: chair_pillow
+    2300006: cieling
+    2300008: door_frame
+    2300010: door_glass
+    2300012: door_metals
+    2300014: door_wood
+    2300016: eksaerismoi
+    2300018: keyboard
+    2300020: lamps
+    2300022: mprizes_buttons
+    2300024: office_legs
+    2300026: office_top
+    2300028: pc_monitors
+    2300030: pc_screen_01
+    2300032: pc_screen_02
+    2300034: pc_tower
+    2300036: pipes
+    2300038: screens_cable
+    2300040: solinas_perimetros
+    2300042: Tripodo
+    2300044: Tripodo001
+    2300046: walls
+    3300000: ceiling_metal
+    3300002: chair
+    3300004: chair_pillow
+    3300006: cieling
+    3300008: door_frame
+    3300010: door_glass
+    3300012: door_metals
+    3300014: door_wood
+    3300016: eksaerismoi
+    3300018: keyboard
+    3300020: lamps
+    3300022: mprizes_buttons
+    3300024: office_legs
+    3300026: office_top
+    3300028: pc_monitors
+    3300030: pc_screen_01
+    3300032: pc_screen_02
+    3300034: pc_tower
+    3300036: pipes
+    3300038: screens_cable
+    3300040: solinas_perimetros
+    3300042: Tripodo
+    3300044: Tripodo001
+    3300046: walls
+    4300000: walls
+    4300002: Tripodo
+    4300004: office_top
+    4300006: office_legs
+    4300008: solinas_perimetros
+    4300010: pc_monitors
+    4300012: door_frame
+    4300014: door_glass
+    4300016: door_metals
+    4300018: door_wood
+    4300020: pc_tower
+    4300022: screens_cable
+    4300024: keyboard
+    4300026: chair_pillow
+    4300028: chair
+    4300030: cieling
+    4300032: lamps
+    4300034: eksaerismoi
+    4300036: ceiling_metal
+    4300038: pipes
+    4300040: pc_screen_01
+    4300042: pc_screen_02
+    4300044: mprizes_buttons
+    4300046: Tripodo001
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Black_metal
+    second: {fileID: 2100000, guid: efdcf92ff1ed46c46b2aeb2f294793ce, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Gray_metal
+    second: {fileID: 2100000, guid: e6dbc88bc90428c40b6abea5a96b0174, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: black_plastic
+    second: {fileID: 2100000, guid: 7f051e7b2ea8c2a4fb562b5cac90d1d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: door_frame
+    second: {fileID: 2100000, guid: 7c652d00e9b981545a537102779aa24b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: door_glass
+    second: {fileID: 2100000, guid: 573989cf3215d534ca588de6287ccc96, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fabric
+    second: {fileID: 2100000, guid: a4b1f1bfdd2f3ec4290c85bddfe8284a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: gray_plastic
+    second: {fileID: 2100000, guid: 518b4bdf5fd674d46892a5a18d3a2cf1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: green_walls
+    second: {fileID: 2100000, guid: eb92297edba85f749a88fb4ba90b3d7c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: keyboard
+    second: {fileID: 2100000, guid: 9f079be71c085c94396555b99a0c3790, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lamps_white
+    second: {fileID: 2100000, guid: 347d967d47580564791dc413604a99f0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pc_screen_01
+    second: {fileID: 2100000, guid: 85e1f98eaf8115846bff2221f6f0504d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pc_screen_02
+    second: {fileID: 2100000, guid: 2f7b0d5733c345b4b90a7794786a55f2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pc_texture
+    second: {fileID: 2100000, guid: 72f509b2e7843ab4cbf8b19e47567546, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: white_plastic
+    second: {fileID: 2100000, guid: e2f089c1c4a81c6489b65a9ce4d8db34, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wood_door
+    second: {fileID: 2100000, guid: 78e8fe523d4cc1942a55c172164b410f, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Metal_bump
+    second: {fileID: 2800000, guid: baa5a6cfa04592546be2877d7e79f40e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Wall_plaster
+    second: {fileID: 2800000, guid: 1a8bf7e06cda37148bc09add21a23f39, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Wall_plaster_bump
+    second: {fileID: 2800000, guid: ad419b8b0d02ff345b4fe1e3576ec370, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: fabric_seamless
+    second: {fileID: 2800000, guid: d020d47a92a8fa3488802a14bb64d2b8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: fabric_seamless_bump
+    second: {fileID: 2800000, guid: 8984e5b45bfa65644a9c75506021ed5b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: glass_seamless
+    second: {fileID: 2800000, guid: b8f426157111e964bb0b0a9a0e477999, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: green_texture
+    second: {fileID: 2800000, guid: 57d35fe5f24185a42a7d7d039f4bf140, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: keyboard_texture
+    second: {fileID: 2800000, guid: d993787e0114b6a41b8d598aeebee307, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: pc_screen_01
+    second: {fileID: 2800000, guid: dd2db16ffe722ac41affb99ebf550e8b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: pc_screen_02
+    second: {fileID: 2800000, guid: f07e3a22da8542b4fbbcf41a317910ab, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: pc_texture
+    second: {fileID: 2800000, guid: d2d86c2043fc2a241857beb009504815, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: plastic_seamless
+    second: {fileID: 2800000, guid: fc6f359b1fbc7af40b756bffbfb53804, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: plastic_seamless_V02
+    second: {fileID: 2800000, guid: 86b6e7b5770dd9340b3f1949116dca06, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: plastic_seamless_bump
+    second: {fileID: 2800000, guid: b078b1f65305c6f4f987c90b93a010ed, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: wood_seamless
+    second: {fileID: 2800000, guid: 560cf5e742f3983449acc23928de661c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: wood_seamless_bump
+    second: {fileID: 2800000, guid: 369acdc0c30e5cd4696c5b618d914a27, type: 3}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
