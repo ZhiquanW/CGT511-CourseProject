@@ -15,6 +15,8 @@ public class BlockController : MonoBehaviour {
     public Color targetedColor;
     public Color touchedColor;
     public float colorChangeSpeed;
+
+    public float timer;
     // Start is called before the first frame update
     void Start() {
         originalColor = blockRenderer.material.color;
@@ -27,16 +29,20 @@ public class BlockController : MonoBehaviour {
             targetColor = targetedColor;
         }
 
-        if (isTouched) {
-            targetColor = touchedColor;
-        }
+        timer += Time.deltaTime;
     }
 
     private void OnTriggerEnter(Collider other) {
-        Debug.Log("1s");
         if (other.gameObject.CompareTag("Controller")) {
             GameManager.instance.scores += 1;
-            isTouched = true;
+            if (isTarget) {
+                isTouched = true;
+                targetColor = touchedColor;
+                DataRecorder.Instance.RecordTime(timer);
+
+            }
+          
+
             isTarget = false;
         }
     }

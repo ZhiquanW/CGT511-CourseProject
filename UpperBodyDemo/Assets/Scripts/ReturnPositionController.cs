@@ -15,7 +15,7 @@ public class ReturnPositionController : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        this.transform.position = CameraTransform.position - offset;
+        this.transform.position = CameraTransform.position + offset;
     }
 
     private void OnTriggerEnter(Collider other) {
