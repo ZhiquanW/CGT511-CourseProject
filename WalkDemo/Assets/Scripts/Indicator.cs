@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Indicator : MonoBehaviour
 {
-    public Vector3 startPos;
     public Rigidbody indicator2;
     public List<Transform> transforms;
     private Rigidbody rigidbody;
@@ -26,9 +25,11 @@ public class Indicator : MonoBehaviour
     {
         if(other.tag == "Player")
         {
+            
             if (index == transforms.Count)
             {
                 GameManager.instance.SaveResults();
+                Debug.Log("PrintResults");
                 GameManager.instance.StopAllCoroutines();
                 gameObject.SetActive(false);
 
@@ -40,24 +41,22 @@ public class Indicator : MonoBehaviour
             else           
                 indicator2.MovePosition(transforms[index + 1].position);
             index++;
+            if (index == 2)
+                GameManager.instance.StartRecord();
         }
     }
     public float CalculateDeviation(Vector3 pos)
     {
         float dis = 0;
         pos.y = 0.5f;
-        if(index >= 2)
-        {
-            dis = Point2Line(pos, transforms[index - 2].position, transforms[index - 1].position);
-        }
-        else
-        {
-            dis = Point2Line(pos, startPos, transforms[index].position);
-        }
+        dis = Point2Line(pos, transforms[index - 2].position, transforms[index - 1].position);
         return dis;
     }
     public float Point2Line(Vector3 point, Vector3 linePoint1, Vector3 linePoint2)
     {
+        linePoint1.y = 0;
+        linePoint2.y = 0;
+        point.y = 0;
         float fProj = Vector3.Dot(point - linePoint1, (linePoint1 - linePoint2).normalized);
         return ((point - linePoint1).sqrMagnitude - fProj * fProj);
     }

@@ -8,7 +8,6 @@ public class GameManager : MonoBehaviour {
     public static GameManager instance = null;
 
     public Transform player;
-    public int playerNum;
 
     public Indicator indicator;
     private LineRenderer lineRenderer;
@@ -16,8 +15,9 @@ public class GameManager : MonoBehaviour {
     public Dropdown dropDown;
 
     private FileWrite fileWrite;
-    private string fileContent;
+    private string[] fileContent = new string[3];
 
+    public InputField PlayerNum;
     private int condition;
     private int index = 0;
     private float time = 0.0f;
@@ -43,6 +43,7 @@ public class GameManager : MonoBehaviour {
     
     IEnumerator RecordData()
     {
+        Debug.Log("StartRecord");
         while (true)
         {
             Vector3 pos = new Vector3(player.position.x, 0f, player.position.z);
@@ -59,18 +60,21 @@ public class GameManager : MonoBehaviour {
         }
         
     }
-    public void PrintResults()
-    {
-        
-        string fileName = "Result" + playerNum++.ToString() + ".txt";
-        fileWrite.PrintResults(fileName, fileContent);
-        fileContent = "";
-    }
+    
     public void SaveResults()
     {
         dev = dev / positions.Count;
-        fileContent += "Condition:" + condition + "\nDistance:" + dis +
-            "\nTime:" + time + "\nSpeed:" + dis / time + "\nDeviation:" + dev + "\n\n";
+        float speed = dis / time;
+        string playerNum = PlayerNum.text;
+        // Modify here
+        fileContent[condition - 1] += "\n\nPlayerNum:" + playerNum + "\nDistance:" + dis.ToString("F2")
+            + "\nTime:" + time.ToString("F2") + "\nSpeed:" + speed.ToString("F2") + "\nDeviation:" + dev.ToString("F2");
+        for (int i = 0; i < 3; i++)
+        {
+            string fileName = "Condition" + (i + 1).ToString() + ".txt";
+            fileWrite.PrintResults(fileName, fileContent[i]);
+            fileContent[i] = "";
+        }
     }
     public void Reset()
     {
@@ -85,7 +89,7 @@ public class GameManager : MonoBehaviour {
     {
         time = 0;
         condition = dropDown.value + 1;
-        indicator.startPos = player.position;
+        
         StartCoroutine(RecordData());
     }
 }

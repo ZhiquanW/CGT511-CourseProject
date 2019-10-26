@@ -12,6 +12,7 @@ public class FileWrite
     {
 
         string filePath = @"Assets\" + fileName;
-        File.WriteAllText(filePath,fileContent);
+        File.AppendAllText(filePath,fileContent);
+        
     }
 }
