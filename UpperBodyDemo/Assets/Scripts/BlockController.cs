@@ -29,17 +29,15 @@ public class BlockController : MonoBehaviour {
             targetColor = targetedColor;
         }
 
-        timer += Time.deltaTime;
     }
 
     private void OnTriggerEnter(Collider other) {
         if (other.gameObject.CompareTag("Controller")) {
+            Debug.Log("Controller Touched");
             GameManager.instance.scores += 1;
             if (isTarget) {
                 isTouched = true;
                 targetColor = touchedColor;
-                DataRecorder.Instance.RecordTime(timer);
-
             }
           
 

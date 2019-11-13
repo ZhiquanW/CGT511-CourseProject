@@ -7,6 +7,7 @@ public class ReturnPositionController : MonoBehaviour {
     public Transform CameraTransform;
     public Vector3 offset;
     public bool isReturned;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,10 +22,11 @@ public class ReturnPositionController : MonoBehaviour {
     private void OnTriggerEnter(Collider other) {
         if (other.gameObject.CompareTag("Controller")) {
             if (GameManager.instance.targetBlock!=null && GameManager.instance.targetBlock.isTouched) {
+                Debug.Log("Controller Returned");
                 GameManager.instance.targetBlock.isTouched = false;
                 GameManager.instance.targetBlock.targetColor = GameManager.instance.targetBlock.originalColor;
-                Debug.Log("Origin");
                 isReturned = true;
+                DataRecorder.Instance.isRecording = true;
             }
         }
     }
