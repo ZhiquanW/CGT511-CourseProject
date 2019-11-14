@@ -194,7 +194,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 52316319}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.398, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children: []
   m_Father: {fileID: 0}
@@ -754,13 +754,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fileName: data
   controllerTransform: {fileID: 1486557340}
-  speedList: []
+  returnPos: {fileID: 52316323}
   timeList: []
   disList: []
+  playerID: 0
+  deviceID: 0
+  totalDev: 0
+  totalDis: 0
   prePos: {x: 0, y: 0, z: 0}
   timeInterval: 1
   timer: 0
+  durationTimer: 0
   toggleOutput: 0
+  isRecording: 0
 --- !u!1 &1486557336
 GameObject:
   m_ObjectHideFlags: 0
