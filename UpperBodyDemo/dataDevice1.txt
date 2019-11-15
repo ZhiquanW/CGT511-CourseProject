@@ -1,0 +1,3 @@
+Distance:37.39893
+Speed:277.4521
+Deviation:34.98172

@@ -16,7 +16,7 @@ public class ReturnPositionController : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        this.transform.position = CameraTransform.position + offset;
+        this.transform.localPosition = CameraTransform.localPosition + offset;
     }
 
     private void OnTriggerEnter(Collider other) {
@@ -27,6 +27,25 @@ public class ReturnPositionController : MonoBehaviour {
                 GameManager.instance.targetBlock.targetColor = GameManager.instance.targetBlock.originalColor;
                 isReturned = true;
                 DataRecorder.Instance.isRecording = true;
+                AudioManagement.Instance.playSound();
+                 
+                GameManager.instance.currentTargetIndex += 1;
+                if (GameManager.instance.currentTargetIndex < GameManager.instance.targetSequence.Length) {
+                    GameManager.instance.LaunchNextTouch();
+                }
+                else {
+                    if (DataRecorder.Instance.isRecorded == false) {
+                        DataRecorder.Instance.OutputData();
+                        DataRecorder.Instance.isRecorded = true;
+                    }
+
+                    foreach (var cube in GameManager.instance.blockMat) {
+                        cube.GetComponent<BlockController>().targetColor = Color.clear;
+                    }
+
+                    GameManager.instance.isStarted = false;
+                }
+
             }
         }
     }

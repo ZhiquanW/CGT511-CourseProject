@@ -33,14 +33,12 @@ public class BlockController : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other) {
         if (other.gameObject.CompareTag("Controller")) {
-            Debug.Log("Controller Touched");
             GameManager.instance.scores += 1;
             if (isTarget) {
                 isTouched = true;
                 targetColor = touchedColor;
+                AudioManagement.Instance.playSound();
             }
-          
-
             isTarget = false;
         }
     }

@@ -1,5 +1,0 @@
-PlayerNum:0
-DeviceID:0
-Distance:9.051999
-Speed:38.20778
-Deviation:16.28627

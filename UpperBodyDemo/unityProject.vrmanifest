@@ -5,7 +5,7 @@
       "app_key": "application.generated.unity.upperbodydemo.exe",
       "launch_type": "url",
       "url": "steam://launch/",
-      "action_manifest_path": "C:\\Users\\wang4490\\Documents\\CGT511-CourseProject\\UpperBodyDemo\\Assets\\StreamingAssets\\SteamVR\\actions.json",
+      "action_manifest_path": "C:\\Users\\VR-LAB\\Desktop\\zhiquan\\CGT511-CourseProject-upper (1)\\CGT511-CourseProject-upper\\UpperBodyDemo\\Assets\\StreamingAssets\\SteamVR\\actions.json",
       "strings": {
         "en_us": {
           "name": "UpperBodyDemo [Testing]"

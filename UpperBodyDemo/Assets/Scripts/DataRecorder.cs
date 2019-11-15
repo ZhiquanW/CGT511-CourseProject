@@ -2,10 +2,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class DataRecorder : MonoBehaviour {
     public static DataRecorder Instance;
-    public string fileName;
+    public string fileName="";
     public Transform controllerTransform;
     public Transform returnPos;
     public List<float> timeList;
@@ -19,7 +19,9 @@ public class DataRecorder : MonoBehaviour {
     public float timer;
     public float durationTimer = 0;
     public bool toggleOutput;
+    public bool isRecorded = false;
     public bool isRecording = false;
+    public InputField deviceIDField;
     private void Awake() {
         Instance = this;
     }
@@ -27,10 +29,12 @@ public class DataRecorder : MonoBehaviour {
     // Use this for initialization
     void Start() {
         prePos = controllerTransform.position;
+        
     }
 
     // Update is called once per frame
     void Update() {
+        if (GameManager.instance.isStarted) {
             timer += Time.deltaTime;
             durationTimer += Time.deltaTime;
             if (timer > timeInterval) {
@@ -40,11 +44,7 @@ public class DataRecorder : MonoBehaviour {
                 totalDev += DisP2L(controllerTransform.position, returnPos.position,
                     GameManager.instance.targetBlock.transform.position);
             }
-
-            if (toggleOutput) {
-                toggleOutput = !toggleOutput;
-                OutputData();
-            }
+        }
     }
 
     // Invoke after the controller touched the target block
@@ -54,11 +54,10 @@ public class DataRecorder : MonoBehaviour {
         float fProj = Vector3.Dot(point - linePoint1, (linePoint1 - linePoint2).normalized);
         return Mathf.Sqrt((point - linePoint1).sqrMagnitude - fProj * fProj);
     }
-    void OutputData() {
+   public void OutputData() {
+        Debug.Log("Output Dataset");
         using (System.IO.StreamWriter file = 
             new System.IO.StreamWriter(fileName+".txt", true)) {
-            file.WriteLine("PlayerNum:"+playerID);
-            file.WriteLine("DeviceID:"+deviceID);
             file.WriteLine("Distance:"+totalDis);
             file.WriteLine("Speed:"+(totalDis/timer));
             file.WriteLine("Deviation:"+totalDev);
